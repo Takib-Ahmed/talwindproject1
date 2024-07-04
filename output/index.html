@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en" class="" id="htmltag">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Off-Canvas Menu</title>
+    <!-- Tailwind CSS Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Google Fonts (Roboto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+ 
+    <style>
+*{
+    filter: none !important;
+}
+.dark{
+        
+        filter: invert(1) !important;
+                *{color: Gray 1;
+img:not(.navimg){
+    filter: invert(1) !important;
+}
+.img-fluid{
+    filter: invert(1) !important;
+}
+#switch{
+img{
+    filter: invert(0) !important;
+}
+.img2{
+    display: none;
+}
+.img1{
+    display: block;
+}
+
+
+ }
+
+ 
+ 
+ .banner{filter: invert(1) !important;
+div{
+  form{
+    
+    filter: invert(2) !important;
+  }  
+}
+}
+        }       
+            }
+
+            #switch{
+.img1{
+    display: none;
+}
+}
+    
+        body{
+            color: Gray 1 !important;
+        }
+        form {
+
+
+            padding: 6px 12px;
+            display: flex;
+            gap: 5px;
+            width: 350px;
+            margin: 0 auto;
+            outline: none;
+            background-color: #ffff;
+
+            input {
+                width: 300px;
+            }
+
+            a {
+                background-color: #757575;
+                text-decoration: none;
+                padding: 5px 5px;
+                color: #ffff;
+                border-radius: 3px;
+
+            }
+
+            a:hover {
+                background-color: #838080;
+            }
+        }
+
+        form button {
+            background-color: transparent;
+            border: none;
+            margin: 0;
+            cursor: pointer;
+
+        }
+        .sections{
+            .border-2:hover{
+transform: scale(1.0199);
+transition: 0.4s;
+            }
+        }
+
+        @media only screen and (max-width: 400px){
+            form {
+
+
+padding: 6px 12px;
+display: flex;
+gap: 5px;
+width: 300px;
+margin: 0 auto;
+outline: none;
+background-color: #ffff;
+
+input {
+    width: 300px;
+}
+
+a {
+    background-color: #757575;
+    text-decoration: none;
+    padding: 5px 5px;
+    color: #ffff;
+    border-radius: 3px;
+
+}
+
+a:hover {
+    background-color: #838080;
+}
+}
+
+        }
+        button:hover  {
+transform: scale(1.1);
+transition: 0.5s;
+        }
+        a:hover , form:hover{
+            transform: scale(1.05);
+            transition: 0.5s;          
+        }
+        
+        .offcanvas,
+        .offcanvas-xxl,
+        .offcanvas-xl,
+        .offcanvas-lg,
+        .offcanvas-md,
+        .offcanvas-sm {
+            --bs-offcanvas-zindex: 1045;
+            --bs-offcanvas-width: 350px;
+            --bs-offcanvas-height: 30vh;
+            --bs-offcanvas-padding-x: 1rem;
+            --bs-offcanvas-padding-y: 1rem;
+            --bs-offcanvas-color: var(--bs-body-color);
+            --bs-offcanvas-bg: var(--bs-body-bg);
+            --bs-offcanvas-border-width: var(--bs-border-width);
+            --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+            --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm);
+            --bs-offcanvas-transition: transform 0.3s ease-in-out;
+            --bs-offcanvas-title-line-height: 1.5;
+        }
+
+
+        @media (max-width: 575.98px) {
+            .offcanvas-sm {
+                position: fixed;
+                bottom: 0;
+                z-index: var(--bs-offcanvas-zindex);
+                display: flex;
+                flex-direction: column;
+                max-width: 100%;
+                color: var(--bs-offcanvas-color);
+                visibility: hidden;
+                background-color: var(--bs-offcanvas-bg);
+                background-clip: padding-box;
+                outline: 0;
+                transition: var(--bs-offcanvas-transition);
+            }
+        }
+
+        @media (max-width: 575.98px) and (prefers-reduced-motion: reduce) {
+            .offcanvas-sm {
+                transition: none;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .offcanvas-sm.offcanvas-start {
+                top: 0;
+                left: 0;
+                width: var(--bs-offcanvas-width);
+                border-right: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateX(-100%);
+            }
+
+            .offcanvas-sm.offcanvas-end {
+                top: 0;
+                right: 0;
+                width: var(--bs-offcanvas-width);
+                border-left: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateX(100%);
+            }
+
+            .offcanvas-sm.offcanvas-top {
+                top: 0;
+                right: 0;
+                left: 0;
+                height: var(--bs-offcanvas-height);
+                max-height: 100%;
+                border-bottom: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateY(-100%);
+            }
+
+            .offcanvas-sm.offcanvas-bottom {
+                right: 0;
+                left: 0;
+                height: var(--bs-offcanvas-height);
+                max-height: 100%;
+                border-top: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateY(100%);
+            }
+
+            .offcanvas-sm.showing,
+            .offcanvas-sm.show:not(.hiding) {
+                transform: none;
+            }
+
+            .offcanvas-sm.showing,
+            .offcanvas-sm.hiding,
+            .offcanvas-sm.show {
+                visibility: visible;
+            }
+        }
+
+        @media (min-width: 576px) {
+            .offcanvas-sm {
+                --bs-offcanvas-height: auto;
+                --bs-offcanvas-border-width: 0;
+                background-color: transparent !important;
+            }
+
+            .offcanvas-sm .offcanvas-header {
+                display: none;
+            }
+
+            .offcanvas-sm .offcanvas-body {
+                display: flex;
+                flex-grow: 0;
+                padding: 0;
+                overflow-y: visible;
+                background-color: transparent !important;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .offcanvas-md {
+                position: fixed;
+                bottom: 0;
+                z-index: var(--bs-offcanvas-zindex);
+                display: flex;
+                flex-direction: column;
+                max-width: 100%;
+                color: var(--bs-offcanvas-color);
+                visibility: hidden;
+                background-color: var(--bs-offcanvas-bg);
+                background-clip: padding-box;
+                outline: 0;
+                transition: var(--bs-offcanvas-transition);
+            }
+        }
+
+        @media (max-width: 767.98px) and (prefers-reduced-motion: reduce) {
+            .offcanvas-md {
+                transition: none;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .offcanvas-md.offcanvas-start {
+                top: 0;
+                left: 0;
+                width: var(--bs-offcanvas-width);
+                border-right: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateX(-100%);
+            }
+
+            .offcanvas-md.offcanvas-end {
+                top: 0;
+                right: 0;
+                width: var(--bs-offcanvas-width);
+                border-left: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateX(100%);
+            }
+
+            .offcanvas-md.offcanvas-top {
+                top: 0;
+                right: 0;
+                left: 0;
+                height: var(--bs-offcanvas-height);
+                max-height: 100%;
+                border-bottom: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateY(-100%);
+            }
+
+            .offcanvas-md.offcanvas-bottom {
+                right: 0;
+                left: 0;
+                height: var(--bs-offcanvas-height);
+                max-height: 100%;
+                border-top: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateY(100%);
+            }
+
+            .offcanvas-md.showing,
+            .offcanvas-md.show:not(.hiding) {
+                transform: none;
+            }
+
+            .offcanvas-md.showing,
+            .offcanvas-md.hiding,
+            .offcanvas-md.show {
+                visibility: visible;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .offcanvas-md {
+                --bs-offcanvas-height: auto;
+                --bs-offcanvas-border-width: 0;
+                background-color: transparent !important;
+            }
+
+            .offcanvas-md .offcanvas-header {
+                display: none;
+            }
+
+            .offcanvas-md .offcanvas-body {
+                display: flex;
+                flex-grow: 0;
+                padding: 0;
+                overflow-y: visible;
+                background-color: transparent !important;
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            .offcanvas-lg {
+                position: fixed;
+                bottom: 0;
+                z-index: var(--bs-offcanvas-zindex);
+                display: flex;
+                flex-direction: column;
+                max-width: 100%;
+                color: var(--bs-offcanvas-color);
+                visibility: hidden;
+                background-color: var(--bs-offcanvas-bg);
+                background-clip: padding-box;
+                outline: 0;
+                transition: var(--bs-offcanvas-transition);
+            }
+        }
+
+        @media (max-width: 991.98px) and (prefers-reduced-motion: reduce) {
+            .offcanvas-lg {
+                transition: none;
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            .offcanvas-lg.offcanvas-start {
+                top: 0;
+                left: 0;
+                width: var(--bs-offcanvas-width);
+                border-right: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateX(-100%);
+            }
+
+            .offcanvas-lg.offcanvas-end {
+                top: 0;
+                right: 0;
+                width: var(--bs-offcanvas-width);
+                border-left: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateX(100%);
+            }
+
+            .offcanvas-lg.offcanvas-top {
+                top: 0;
+                right: 0;
+                left: 0;
+                height: var(--bs-offcanvas-height);
+                max-height: 100%;
+                border-bottom: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateY(-100%);
+            }
+
+            .offcanvas-lg.offcanvas-bottom {
+                right: 0;
+                left: 0;
+                height: var(--bs-offcanvas-height);
+                max-height: 100%;
+                border-top: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateY(100%);
+            }
+
+            .offcanvas-lg.showing,
+            .offcanvas-lg.show:not(.hiding) {
+                transform: none;
+            }
+
+            .offcanvas-lg.showing,
+            .offcanvas-lg.hiding,
+            .offcanvas-lg.show {
+                visibility: visible;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .offcanvas-lg {
+                --bs-offcanvas-height: auto;
+                --bs-offcanvas-border-width: 0;
+                background-color: transparent !important;
+            }
+
+            .offcanvas-lg .offcanvas-header {
+                display: none;
+            }
+
+            .offcanvas-lg .offcanvas-body {
+                display: flex;
+                flex-grow: 0;
+                padding: 0;
+                overflow-y: visible;
+                background-color: transparent !important;
+            }
+        }
+
+        @media (max-width: 1199.98px) {
+            .offcanvas-xl {
+                position: fixed;
+                bottom: 0;
+                z-index: var(--bs-offcanvas-zindex);
+                display: flex;
+                flex-direction: column;
+                max-width: 100%;
+                color: var(--bs-offcanvas-color);
+                visibility: hidden;
+                background-color: var(--bs-offcanvas-bg);
+                background-clip: padding-box;
+                outline: 0;
+                transition: var(--bs-offcanvas-transition);
+            }
+        }
+
+        @media (max-width: 1199.98px) and (prefers-reduced-motion: reduce) {
+            .offcanvas-xl {
+                transition: none;
+            }
+        }
+
+        @media (max-width: 1199.98px) {
+            .offcanvas-xl.offcanvas-start {
+                top: 0;
+                left: 0;
+                width: var(--bs-offcanvas-width);
+                border-right: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateX(-100%);
+            }
+
+            .offcanvas-xl.offcanvas-end {
+                top: 0;
+                right: 0;
+                width: var(--bs-offcanvas-width);
+                border-left: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateX(100%);
+            }
+
+            .offcanvas-xl.offcanvas-top {
+                top: 0;
+                right: 0;
+                left: 0;
+                height: var(--bs-offcanvas-height);
+                max-height: 100%;
+                border-bottom: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateY(-100%);
+            }
+
+            .offcanvas-xl.offcanvas-bottom {
+                right: 0;
+                left: 0;
+                height: var(--bs-offcanvas-height);
+                max-height: 100%;
+                border-top: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateY(100%);
+            }
+
+            .offcanvas-xl.showing,
+            .offcanvas-xl.show:not(.hiding) {
+                transform: none;
+            }
+
+            .offcanvas-xl.showing,
+            .offcanvas-xl.hiding,
+            .offcanvas-xl.show {
+                visibility: visible;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .offcanvas-xl {
+                --bs-offcanvas-height: auto;
+                --bs-offcanvas-border-width: 0;
+                background-color: transparent !important;
+            }
+
+            .offcanvas-xl .offcanvas-header {
+                display: none;
+            }
+
+            .offcanvas-xl .offcanvas-body {
+                display: flex;
+                flex-grow: 0;
+                padding: 0;
+                overflow-y: visible;
+                background-color: transparent !important;
+            }
+        }
+
+        @media (max-width: 1399.98px) {
+            .offcanvas-xxl {
+                position: fixed;
+                bottom: 0;
+                z-index: var(--bs-offcanvas-zindex);
+                display: flex;
+                flex-direction: column;
+                max-width: 100%;
+                color: var(--bs-offcanvas-color);
+                visibility: hidden;
+                background-color: var(--bs-offcanvas-bg);
+                background-clip: padding-box;
+                outline: 0;
+                transition: var(--bs-offcanvas-transition);
+            }
+        }
+
+        @media (max-width: 1399.98px) and (prefers-reduced-motion: reduce) {
+            .offcanvas-xxl {
+                transition: none;
+            }
+        }
+
+        @media (max-width: 1399.98px) {
+            .offcanvas-xxl.offcanvas-start {
+                top: 0;
+                left: 0;
+                width: var(--bs-offcanvas-width);
+                border-right: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateX(-100%);
+            }
+
+            .offcanvas-xxl.offcanvas-end {
+                top: 0;
+                right: 0;
+                width: var(--bs-offcanvas-width);
+                border-left: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateX(100%);
+            }
+
+            .offcanvas-xxl.offcanvas-top {
+                top: 0;
+                right: 0;
+                left: 0;
+                height: var(--bs-offcanvas-height);
+                max-height: 100%;
+                border-bottom: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateY(-100%);
+            }
+
+            .offcanvas-xxl.offcanvas-bottom {
+                right: 0;
+                left: 0;
+                height: var(--bs-offcanvas-height);
+                max-height: 100%;
+                border-top: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+                transform: translateY(100%);
+            }
+
+            .offcanvas-xxl.showing,
+            .offcanvas-xxl.show:not(.hiding) {
+                transform: none;
+            }
+
+            .offcanvas-xxl.showing,
+            .offcanvas-xxl.hiding,
+            .offcanvas-xxl.show {
+                visibility: visible;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            .offcanvas-xxl {
+                --bs-offcanvas-height: auto;
+                --bs-offcanvas-border-width: 0;
+                background-color: transparent !important;
+            }
+
+            .offcanvas-xxl .offcanvas-header {
+                display: none;
+            }
+
+            .offcanvas-xxl .offcanvas-body {
+                display: flex;
+                flex-grow: 0;
+                padding: 0;
+                overflow-y: visible;
+                background-color: transparent !important;
+            }
+        }
+
+        .offcanvas {
+            position: fixed;
+            bottom: 0;
+            z-index: var(--bs-offcanvas-zindex);
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            color: var(--bs-offcanvas-color);
+            visibility: hidden;
+            background-color: var(--bs-offcanvas-bg);
+            background-clip: padding-box;
+            outline: 0;
+            transition: var(--bs-offcanvas-transition);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .offcanvas {
+                transition: none;
+          }
+        }
+
+        .offcanvas {
+            background-color: #ffff !important;
+            justify-content: end !important;
+            padding: 30px 60px;
+            padding-right: 0;
+
+        }
+
+        .offcanvas.offcanvas-start {
+            top: 0;
+            left: 0;
+            width: var(--bs-offcanvas-width);
+            border-right: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+            transform: translateX(-100%);
+        }
+
+        .offcanvas.offcanvas-end {
+            top: 0;
+            right: 0;
+            width: var(--bs-offcanvas-width);
+            border-left: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+            transform: translateX(100%);
+        }
+
+        .offcanvas.offcanvas-top {
+            top: 0;
+            right: 0;
+            left: 0;
+            height: var(--bs-offcanvas-height);
+            max-height: 100%;
+            border-bottom: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+            transform: translateY(-100%);
+        }
+
+        .offcanvas.offcanvas-bottom {
+            right: 0;
+            left: 0;
+            height: var(--bs-offcanvas-height);
+            max-height: 100%;
+            border-top: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+            transform: translateY(100%);
+        }
+
+        .offcanvas.showing,
+        .offcanvas.show:not(.hiding) {
+            transform: none;
+        }
+
+        .offcanvas.showing,
+        .offcanvas.hiding,
+        .offcanvas.show {
+            visibility: visible;
+        }
+
+        .offcanvas-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1040;
+            width: 100vw;
+            height: 100vh;
+         
+        }
+
+        .offcanvas-backdrop.fade {
+            opacity: 0;
+        }
+
+        .offcanvas-backdrop.show {
+            opacity: 0.5;
+        }
+
+        .offcanvas-header {
+            display: flex;
+            align-items: center;
+            padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+        }
+
+        .offcanvas-header .btn-close {
+            padding: calc(var(--bs-offcanvas-padding-y) * 0.5) calc(var(--bs-offcanvas-padding-x) * 0.5);
+            margin: calc(-0.5 * var(--bs-offcanvas-padding-y)) calc(-0.5 * var(--bs-offcanvas-padding-x)) calc(-0.5 * var(--bs-offcanvas-padding-y)) auto;
+        }
+
+        .offcanvas-title {
+            margin-bottom: 0;
+            line-height: var(--bs-offcanvas-title-line-height);
+            background-color: #ffff;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        .offcanvas-body {
+            flex-grow: 1;
+            padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+            overflow-y: auto;
+            background-color: #ffff;
+            justify-content: end !important;
+        }
+    </style>
+    
+</head>
+
+
+
+
+
+<body class="bg-white dark:bg-gray-900">
+
+    <nav class="relative ">
+
+        <div class="flex  justify-between px-10 fixed w-full bg-white py-3 "
+            style="font-size: small;z-index: 999999999999999999999999999999999999999999;">
+            <div class="flex gap-2">
+                <div><img src="images/tickerAI-logo 1.png" alt="" class="w-24 bg-transparent navimg"></div>
+                <div style="font-size: small;" class="pt-1 font-bold text-wrap hidden sm:block">
+                    <p>
+                        A Mark Cuban Company <br>
+                        AI-based Financial Market News Aggregator
+                    </p>
+                </div>
+            </div>
+            <div class="flex  gap-3 font-bold">
+             <a href="news.html" class="p-2 rounded btn bg-blue-600 my-1 hidden md:block  text-white" style="background-color: #5677AC;">  Personalized News </a>
+                <button class="px-3.5 py-0 my-1 rounded-3xl bg-blue-300 hidden md:block font-extrabold" style="border-radius: 100px;background-color: #5677AC26;color: #5677AC;">IK</button>
+                <button class="rounded-3xl px-2 py-0 btn bg-transparent my-1 " id="switch" ><img src="./images/file (5).png" alt=" "
+                    width="24px" class="img2"><img src="images/Vector (4).png" alt=" "
+                        width="24px" class="img1"></button>
+                        <a class="btn btn-primary md:hidden" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-menu mt-1.5 ">
+                            <line x1="4" x2="20" y1="12" y2="12" />
+                            <line x1="4" x2="20" y1="6" y2="6" />
+                            <line x1="4" x2="20" y1="18" y2="18" />
+                        </svg>
+                          </a>
+                      
+                          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header relative">
+                              <h1 class=" mx-20 my-0 text-2xl" id="offcanvasExampleLabel">Options</h1>
+                              <button type="button" class="btn-close  me-32   absolute" data-bs-dismiss="offcanvas" aria-label="Close" style="transform: translateX(-25px); "><img src="./images/png-clipart-black-resourcesforbitches-black-x-thumbnail.png" alt="" width="24px" ></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="grid  gap-3 font-bold">
+                                    <a href="news.html" class="p-2 text-center rounded-3xl btn bg-blue-600 my-1  text-white" style="background-color: #5677AC;">  Personalized News </a>
+                                       <button class="px-2 py-2 my-1 rounded-3xl bg-blue-300   font-extrabold" style="border-radius: 100px;background-color: #5677AC26;color: #5677AC;">IK</button>
+                                   
+                                             
+                                   </div>
+                                   
+                            </div>
+                          </div>      
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br>
+    <div class=" banner  relative justify-center "
+        style="background: url(images/pexels-photo-8370752\ 1.png) no-repeat; background-size: cover;height: 500px;justify-content: center;">
+        <center>
+            <div class="grid gap-5 justify-content-center pt-52 " >
+                <center> <img src="images/image 2.png" alt="" class=""></center>
+
+                <div>
+                    <form class="rounded ">
+                        <button><span class="material-symbols-outlined" style="background-color: #ffff;">
+                                <img src="images/search_24dp_FILL0_wght400_GRAD0_opsz24 (2).png" alt="" width="24px"
+                                    style="padding-top: 2px;">
+                            </span></button>
+                        <input type="search" placeholder="Search any market topic" class="text-dark ">
+                    </form>
+                </div>
+            </div>
+        </center>
+    </div>
+    <br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex gap-7 flex-wrap lg:flex-nowrap justify-center m-2.5" style="">
+
+
+    <div>
+        <div class="border-b-2 border-black pb-2 ">
+            <div class="flex justify-between text-lg font-bold">
+                <p>All News</p>
+                <div class="flex gap-2">Filter by: <p class="flex">Stocks <span
+                            class="material-symbols-outlined pt-0.5">
+                            stat_minus_1
+                        </span></p>
+                </div>
+            </div>
+
+        </div>
+<div class="grid gap-20 sections">
+        <div>
+            <h1 class="font-bold  " style="font-size: 17.2px;">Individual Stocks</h1><br>
+
+            <div class="grid  gap-3  ">
+                <div class=" flex flex-wrap lg:flex-nowrap lg:gap-5   p-3 border-2 lh-1 relative">
+                    <div class="w-full lg:w-auto lg:h-auto bg-cover " style="line-height: normal;object-fit: cover;"><img src="images/Rectangle 6 (1).png" alt="" class=" w-full h-44 bg-cover lg:w-auto lg:h-auto " style="object-fit: cover;"></div>
+                    <div class="grid p-1 gap-1 ;"><br class="lg:hidden">
+                        <div><a href="" class="bg-black text-white p-1 rounded">Dow jones</a>
+                            <a href="" class="bg-black text-white p-1 rounded">Dow jones</a>
+                            <a href="" class="bg-black text-white p-1 rounded">Dow jones</a>
+                        </div>
+                        <p class="font-bold">Nzd/usd forex technical analysis - traders will be monitoring fed for
+                            future rate hike clues</p>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+                        <div class="flex gap-5">
+                            <p class="font-thin small">06 September 2022</p>.<p>By <font style="color: #5677AC;">Shouvik
+                                    Nath</font>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" flex flex-wrap lg:flex-nowrap lg:gap-5   p-3 border-2 lh-1 relative">
+                    <div class="w-full lg:w-auto lg:h-auto bg-cover " style="line-height: normal;object-fit: cover;"><img src="images/Rectangle 7 (1).png" alt="" class=" w-full h-44 bg-cover lg:w-auto lg:h-auto " style="object-fit: cover;"></div>
+                    <div class="grid p-1 gap-1 ;"><br class="lg:hidden">
+                        <div><a href="" class="bg-black text-white p-1 rounded">Dow jones</a>
+                            <a href="" class="bg-black text-white p-1 rounded">Dow jones</a>
+                            <a href="" class="bg-black text-white p-1 rounded">Dow jones</a>
+                        </div>
+                        <p class="font-bold">Rupee inches 5 paise higher to 77.99 against us dollar in early trade</p>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+                        <div class="flex gap-5">
+                            <p class="font-thin small">06 September 2022</p>.<p>By <font style="color: #5677AC;">Amado </font>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class=" flex flex-wrap lg:flex-nowrap lg:gap-5   p-3 border-2 lh-1 relative">
+                    <div class="w-full lg:w-auto lg:h-auto bg-cover " style="line-height: normal;object-fit: cover;"><img src="images/Rectangle 8.png" alt="" class=" w-full h-44 bg-cover lg:w-auto lg:h-auto " style="line-height: normal;object-fit: cover;"></div>
+                    <div class="grid p-1 gap-1 ;"><br class="lg:hidden">
+                        <div><a href="" class="bg-black text-white p-1 rounded">wall street</a>
+                            <a href="" class="bg-black text-white p-1 rounded">Analyst coverage</a>
+                          
+                        </div>
+                        <p class="font-bold">Rupee inches 5 paise higher to 77.99 against us dollar in early trade</p>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+                        <div class="flex gap-5">
+                            <p class="font-thin small">06 September 2022</p>.<p>By <font style="color: #5677AC;">Amado </font>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1 class="font-bold  " style="font-size: 17.2px;">Stock Sectors</h1><br>
+            <div class="grid  gap-3">
+                <div class=" flex flex-wrap lg:flex-nowrap lg:gap-5   p-3 border-2 lh-1 relative">
+                    <div class="w-full lg:w-auto lg:h-auto bg-cover "style="line-height: normal;object-fit: cover;"><img src="images/Rectangle 6 (2).png" alt="" class=" w-full h-44 bg-cover lg:w-auto lg:h-auto " style="line-height: normal;object-fit: cover;"></div>
+                    <div class="grid p-1 gap-1 ;"><br class="lg:hidden">
+                        <div><a href="" class="bg-black text-white p-1 rounded">Dow jones</a>
+                            <a href="" class="bg-black text-white p-1 rounded">Dow jones</a>
+                            <a href="" class="bg-black text-white p-1 rounded">Dow jones</a>
+                        </div>
+                        <p class="font-bold">Nzd/usd forex technical analysis - traders will be monitoring fed for
+                            future rate hike clues</p>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit official
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+                        <div class="flex gap-5">
+                            <p class="font-thin small">06 September 2022</p>.<p>By <font style="color: #5677AC;">Shouvik
+                                    Nath</font>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" flex flex-wrap lg:flex-nowrap lg:gap-5   p-3 border-2 lh-1 relative">
+                    <div class="w-full lg:w-auto lg:h-auto bg-cover " style="line-height: normal;"><img src="images/Rectangle 7 (2).png" alt="" class=" w-full h-44 bg-cover lg:w-auto lg:h-auto " style="line-height: normal;object-fit: cover;"></div>
+                    <div class="grid p-1 gap-1 ;"><br class="lg:hidden">
+                        <div><a href="" class="bg-black text-white p-1 rounded">Dow jones</a>
+                            <a href="" class="bg-black text-white p-1 rounded">Dow jones</a>
+                            <a href="" class="bg-black text-white p-1 rounded">Dow jones</a>
+                        </div>
+                        <p class="font-bold">Rupee inches 5 paise higher to 77.99 against us dollar in early trade</p>
+                        <div class="flex gap-5">
+                            <p class="font-thin small">06 September 2022</p>.<p>By <font style="color: #5677AC;">Amado </font>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+          
+            </div>
+        </div>
+        <div>
+            <h1 class="font-bold  " style="font-size: 17.2px;">Stock Market Topics</h1><br>
+            <div class="grid  gap-3">
+                <div class=" flex flex-wrap lg:flex-nowrap lg:gap-5   p-3 border-2 lh-1 relative">
+                    <div class="w-full lg:w-auto lg:h-auto bg-cover " style="line-height: normal;object-fit: cover;"><img src="images/Rectangle 6 (3).png" alt="" class=" w-full h-44 bg-cover lg:w-auto lg:h-auto " style="line-height: normal;object-fit: cover;"></div>
+                    <div class="grid p-1 gap-1 ;"><br class="lg:hidden">
+                        <div><a href="" class="bg-black text-white p-1 rounded">Dow jones</a>
+                            <a href="" class="bg-black text-white p-1 rounded">Dow jones</a>
+                            <a href="" class="bg-black text-white p-1 rounded">Dow jones</a>
+                        </div>
+                        <p class="font-bold">Rupee inches 5 paise higher to 77.99 against us dollar in early trade</p>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet...</p>
+                        <div class="flex gap-5">
+                            <p class="font-thin small">06 September 2022</p>.<p>By <font style="color: #5677AC;">Shouvik
+                                    Nath</font>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+
+         
+            </div>
+        </div>
+    </div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="lg:w-96 w-full justify-center   "  >
+
+        <div class="border-b-2 border-black pb-2.5 justify-center">
+            <div class="flex justify-between text-lg font-bold">
+                <p>Featured</p>
+              <br>
+            </div>
+
+      
+        </div>
+        <div class="border-2 my-1">
+ <div>
+    <h2 class="font-bold" style="font-size: 17.2px;">Daily Rundowns</h2>
+</div>
+        <div class="justify-center md:p-40  md:pt-5 md:pb-5  p-10 pt-5 pb-5 lg:p-2  ">
+            <div class="justify-center">
+            <p class=" font-bold" style="font-size:medium;">Earnings:</p><br>
+            <div class=" gap-2 justify-center text-uppercase" style="line-height: 30px;"><a href="" class="p-0.5" style="background-color: #5677AC26;">Csan</a>
+                <a href="" class="p-0.5 " style="background-color: #5677AC26;">Alya</a>
+                <a href="" class="p-0.5 " style="background-color: #5677AC26;">Gato</a>
+                <a href="" class="p-0.5 " style="background-color: #5677AC26;">Css</a>
+                <a href="" class="p-0.5 " style="background-color: #5677AC26;">VZLA</a>
+                <a href="" class="p-0.5 " style="background-color: #5677AC26;">MFH</a>
+             
+            </div></div>
+            <div class="justify-center"> 
+                <p class="font-bold" style="font-size:medium;" >Movers:</p><br>
+                <div class=" gap-2 justify-center text-uppercase"  style="line-height: 30px;"><a href="" class="p-0.5" style="background-color: #5677AC26;">rev</a>
+                    <a href="" class="p-0.5 text-uppercase " style="background-color: #5677AC26;">petv</a>
+                    <a href="" class="p-0.5 " style="background-color: #5677AC26;">rytm</a>
+                    <a href="" class="p-0.5 " style="background-color: #5677AC26;">srrk</a>
+                    <a href="" class="p-0.5 " style="background-color: #5677AC26;">vera</a>
+                    <a href="" class="p-0.5 " style="background-color: #5677AC26;">kzia</a>
+                    <a href="" class="p-0.5 " style="background-color: #5677AC26;">sym</a>
+                </div></div>
+                <div class="justify-center">
+                    <p class="font-bold" style="font-size:medium;">Technicals:</p><br>
+                    <div class=" gap-2 justify-center"  style="line-height: 30px;"><a href="" class="p-0.5" style="background-color: #5677AC26;">bearish</a>
+                        <a href="" class="p-0.5 " style="background-color: #5677AC26;">Dow jones</a>
+                        <a href="" class="p-0.5 " style="background-color: #5677AC26;">tsla</a>
+                        <a href="" class="p-0.5 " style="background-color: #5677AC26;">mcd</a>
+                        <a href="" class="p-0.5 " style="background-color: #5677AC26;">bullish</a>
+                        <a href="" class="p-0.5 " style="background-color: #5677AC26;">uso</a>
+                        <a href="" class="p-0.5 " style="background-color: #5677AC26;">sedg</a>
+                        <a href="" class="p-0.5 " style="background-color: #5677AC26;">enph</a>   <a href="" class="p-0.5 " style="background-color: #5677AC26;">shop</a>
+                    </div></div>
+        </div></div>
+        <div class="grid text-center" style="">
+<div class="text-wrap">
+    <img src="images/Rectangle 182@2x.png" alt=""  class="w-full  img-fluid">
+    <p class="font-bold small">Amet minim mollit non deserunt ullamco est sit aliqua dolor do  amet sint. </p>
+</div>
+<div class="">
+    <img src="images/Rectangle 183.png" alt=""  class="w-full  img-fluid">
+    <p class="font-bold small">Amet minim mollit non deserunt  ullamco est sit aliqua dolor do amet sint. </p>
+</div>
+<div class="">
+    <img src="images/Rectangle 184.png" alt=""  class="w-full  img-fluid">
+    <p class="font-bold small">Amet minim mollit non deserunt  ullamco est sit aliqua dolor do br amet sint. </p>
+</div>
+
+        </div>
+    </div></div>
+    <script>
+        const htmltag = document.getElementById("htmltag");
+        document.getElementById("switch").addEventListener("click" , function (){
+            htmltag.classList.toggle("dark");
+        });
+    
+    </script>
+    
+</body>
+
+</html>
