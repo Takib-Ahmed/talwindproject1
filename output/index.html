@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="" id="htmltag">
+<html lang="en" class="relative" id="htmltag">
 
 <head>
     <meta charset="UTF-8">
@@ -792,7 +792,7 @@ transition: 0.5s;
                           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                             <div class="offcanvas-header relative">
                               <h1 class=" mx-20 my-0 text-2xl" id="offcanvasExampleLabel">Options</h1>
-                              <button type="button" class="btn-close  me-32   absolute" data-bs-dismiss="offcanvas" aria-label="Close" style="transform: translateX(-25px); "><img src="./images/png-clipart-black-resourcesforbitches-black-x-thumbnail.png" alt="" width="24px" ></button>
+                              <button type="button" class="btn-close bg-transparent  me-32   absolute" data-bs-dismiss="offcanvas" aria-label="Close" style="transform: translateX(-25px); "><img src="./images/png-clipart-black-resourcesforbitches-black-x-thumbnail.png" alt="" width="24px" class="bg-transparent navimg" ></button>
                             </div>
                             <div class="offcanvas-body">
                                 <div class="grid  gap-3 font-bold">
@@ -1060,14 +1060,20 @@ transition: 0.5s;
 
         </div>
     </div></div>
-    <script>
-        const htmltag = document.getElementById("htmltag");
-        document.getElementById("switch").addEventListener("click" , function (){
-            htmltag.classList.toggle("dark");
-        });
-    
-    </script>
-    
+    <br><br>
+
+      <footer class="bg-black bottom-0 absolute w-full">
+
+        <center>
+        <p class="text-white"> All Right Researve ti ticKerAI-2024</p></center>
+            </footer>  
+            <script>
+                const htmltag = document.getElementById("htmltag");
+                document.getElementById("switch").addEventListener("click" , function (){
+                    htmltag.classList.toggle("dark");
+                });
+            
+            </script>
 </body>
 
 </html>
